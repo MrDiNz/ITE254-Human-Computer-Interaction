@@ -6,23 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <div id="app">
-    <v-app>
-      <!-- <v-content>
-        <v-container>Hello world</v-container>
-      </v-content> -->
-      <!--NavBar-->
+<div id="app">
+  <v-app>
+    <!-- <v-content>
+      <v-container>Hello world</v-container>
+    </v-content> -->
+    <!--NavBar-->
     <v-toolbar fixed>
       <v-flex xs1>
         <v-title>
           <router-link to="/">
             <img
-              src="img/home.png"
-              alt="logo"
-              width="45px"
-              height="45px"
-              id="my-img"
-              class="hidden-sm-and-down"
+                src="img/home.png"
+                alt="logo"
+                width="36px"
+                height="36px"
+                id="my-img"
+                class="hidden-sm-and-down"
             />
           </router-link>
           <!--small screen size-->
@@ -30,23 +30,23 @@
             <v-toolbar-side-icon @click.stop="drawer = !drawer">
             </v-toolbar-side-icon>
             <!--<v-btn color="pink" dark @click.stop="drawer = !drawer">-->
-              <!--Toggle-->
+            <!--Toggle-->
             <!--</v-btn>-->
           </v-toolbar-item>
         </v-title>
       </v-flex>
       <v-spacer></v-spacer>
       <v-flex xs1>
-        <v-title class="toolbar">STEAM</v-title>
+        <v-title style="font-size: 1.8em; color: #7bbfe6;">STEM</v-title>
       </v-flex>
       <v-spacer></v-spacer>
       <!--big screen size-->
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
-          flat
-          v-for="item in items"
-          :key="item.title"
-          :to="item.link"
+            flat
+            v-for="item in items"
+            :key="item.title"
+            :to="item.link"
         >
           <div class="toolbar">{{item.title}}</div>
         </v-btn>
@@ -58,10 +58,10 @@
         <v-divider></v-divider>
 
         <v-list-tile
-          v-for="item in items"
-          :key="item.title"
-          @click.stop="drawer = !drawer"
-          :to="item.link"
+            v-for="item in items"
+            :key="item.title"
+            @click.stop="drawer = !drawer"
+            :to="item.link"
         >
           <v-list-tile-content>
             <v-list-tile-title>{{ item.title }}</v-list-tile-title>
@@ -70,25 +70,26 @@
       </v-list>
     </v-navigation-drawer>
     <!--END NavBar-->
-    </v-app>
-  </div>
+  </v-app>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
-  <script>
-    new Vue({ el: '#app',
-      data: {
-    items: [
-      {title: "Home", link: "/"},
-          {title: "Find a class", link: "/find_a_class"},
-          {title: "Be Our Coach", link: "/coach"},
-          {title: "STEAM Blogs", link: "/steam_blog"},
-          {title: "About Us", link: "/about"},
-          {title: "Contact Us", link: "/contact_us"}
-    ]
-  }
-      
-     })
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            items: [
+                {title: "Home", link: "/"},
+                {title: "Find a class", link: "/find_a_class"},
+                {title: "Be Our Coach", link: "/coach"},
+                {title: "STEAM Blogs", link: "/steam_blog"},
+                {title: "About Us", link: "/about"},
+                {title: "Contact Us", link: "/contact_us"}
+            ]
+        }
+
+    })
+</script>
 </body>
 </html>
