@@ -1,0 +1,32 @@
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
+  .toolbar {
+    color: #7bbfe6;
+  }
+
+  .toolbar:hover {
+    color: #e57f7d;
+  }
+
+  .toolbar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #e57f7d;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.15s linear;
+  }
+
+  .toolbar:hover:before,
+  .toolbar:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  #my-img:hover {
+    content: url("img/homeOnHover.png");
+  }
