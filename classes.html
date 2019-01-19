@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classes</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+			<p id="findclass">Classes</p>
+			<div class="moreclass">
+				<div class="input-group search-container">
+					<input type="text" class="form-control" name="search" placeholder=" Search for classes">
+	      			<button type="submit" class="btn btn-primary searchbt"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+			<span id="searchtype">Type: Class name, Coach name</span>
+	</header>
+
+	<section>
+		<nav style="background-color: #f4f4f5;">
+			<div class="sidenav">
+			  	<div><h5 class="fil"><i style="font-size:18px" class="fa">&#xf0b0;</i> Filter</h5>
+		  			<div class="form-group">
+		  				<span class="p1">Zip Code or Location</span>
+		  				<div class="input-group zippin">
+							<input type="text" class="form-control" id="zipcode" name="zipcode">
+      						<button type="submit" class="btn btn-primary searchbt"><i class="fas fa-map-marker-alt"></i></button>	
+						</div>	
+		  			</div>
+		  			<div>
+			  			<p class="p1">Price</p>
+		  			</div>
+		  			<div>
+			  			<label class="p1">Age</label><br>
+			  			<div class="selectsearch">
+			  				<label class="container check">0 to 3<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">4 to 6<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">7 to 11<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">12 to 18<input type="checkbox"><span class="checkmark"></span></label>
+						</div>						
+					</div>
+					<div>
+						<p class="p1">Season</p>
+			        </div>
+			        <div>
+			        	<label class="p1">Day</label><br>
+			        	<div class="selectsearch">
+			        		<label class="container check">Monday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Tuesday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Wednesday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Thursday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Friday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Saturday<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Sunday<input type="checkbox"><span class="checkmark"></span></label>
+						</div>
+			        </div>
+			        <div>
+			        	<p class="p1">Time</p>
+			        </div>
+			        <div>
+			        	<label class="p1">Setting</label><br>
+			        	<div class="selectsearch">
+			        		<label class="container check">Indoor<input type="checkbox"><span class="checkmark"></span></label>
+			        		<label class="container check">Outdoor<input type="checkbox"><span class="checkmark"></span></label>
+						</div>
+			        </div>
+			        <div>
+			  			<label class="p1">Coach</label><br>
+			  			<div class="selectsearch">
+			  				<label class="container check">Male<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">Female<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">Speak English<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">Speak Chinese<input type="checkbox"><span class="checkmark"></span></label>
+						</div>
+					</div>
+			        <div>
+			        	<label class="p1">Skills</label><br>
+			        	<div class="selectsearch">
+			        		<label class="container check">Thinking Skills<input id="tick" type="checkbox"><span class="checkmark"></span></label>
+					        	<ul id="tick1">
+							        <li><label class="container check">Communication<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Concentration<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Creativity<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Critical Thinking<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Problem Solving<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+							<label class="container check">Social skills<input id="tickk" type="checkbox"><span class="checkmark"></span></label>
+								<ul id="tickk1">
+									<li><label class="container check">Self Confident<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Self Reliance<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Teamwork<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+							<label class="container check">Active Lifestyle<input id="tickk" type="checkbox"><span class="checkmark"></span></label>
+							<label class="container check">School Skills<input id="tickkk" type="checkbox"><span class="checkmark"></span></label>
+								<ul id="tickkk1">
+									<li><label class="container check">Languges<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Mathematics<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Science<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Social studies<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Computer<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+						</div>
+			        </div><br>
+				</div>
+			</div>
+		</nav>
+<!-- content -->
+		<article>
+			<div class="container" style="background-color: #f4f4f5; padding-top: 30px;">
+				<!-- search&sort -->
+				<div class="row">
+					<div class="col-md-8" ></div>
+					<div class="col-md-4 zippin show">
+						<label style="padding-top: 7px; padding-right: 5px;">Sort by</label>
+						<select class="form-control" style="width: 180px;">
+			  				<option value="0" selected>Price: Low to high</option>
+				            <option value="1">Price: High to low</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 zippin show">
+						<p style="color: gray; padding-top: 5px;">Showing <span style="font-weight: 650;">8</span> of <span style="font-weight: 650;">30</span> results.</p>
+					</div>
+				</div>
+				<!-- class row1 -->
+				<div class="row">
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg2.png">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg3.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg4.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			    </div>
+			    <br><br>
+
+				<!-- class row2 -->
+				<div class="row">
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg2.png">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg3.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg4.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			        <div class="col-md-3 col-sm-6">
+			            <div class="product-grid6">
+			            <a href="classinfo.html" class="fill-div">
+			                <div class="product-image6">
+			                	<img class="pic-1" src="image/classimg.jpg">
+			          		</div>
+			                <div class="product-content" style="background-color: white;">
+			                    <h3 class="title">Class Name</h3>
+			                    <center><table>
+									<tr>
+										<td><i class="fas fa-child icon"></i></td>
+			 							<td><span class="a">Age: 4 to 6</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+			 							<td><span class="a">Rama 9</span></td> 
+									</tr>
+									<tr>
+										<td><i class="fas fa-clock icon"></i></td>
+			 							<td><span class="a">Monday 4-5pm</span></td>
+
+			 							<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+			 							<td><span class="a">Miss Mini</span></td>
+									</tr>
+								</table></center>
+			                </div>
+			            </a>
+			            </div>
+			        </div>
+			    </div><br><br>
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="moreclass">
+							<button type="button" class="btn btn-primary classm"><a class="readmore" href="#">See more classes</a></button>
+						</div>
+					</div>
+				</div><br>
+			</div>
+		</article>
+	</section>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" href="classesCss.css">
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	
+$(document).ready(function(){
+  $("#tick").click(function(){
+    $("#tick1").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#tickk").click(function(){
+    $("#tickk1").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#tickkk").click(function(){
+    $("#tickkk1").toggle();
+  });
+});
+</script>
+</html>
