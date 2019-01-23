@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>STEM Blog</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<p id="steamBlog">STEM Blogs</p>
+	</header>
+
+	<section>
+		<nav>
+			<div class="sidenav">
+			  	<div><h5 class="fil"><i style="font-size:18px" class="fa">&#xf0b0;</i> Filter</h5>
+		  			<div>
+			  			<label class="p1">Age</label><br>
+			  			<div class="selectsearch">
+			  				<label class="container check">0 to 3<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">4 to 6<input type="checkbox"><span class="checkmark"></span></label>
+			  				<label class="container check">7+<input type="checkbox"><span class="checkmark"></span></label>
+						</div>						
+					</div>
+			        <div>
+			        	<label class="p1">Skills</label><br>
+			        	<div class="selectsearch">
+			        		<label class="container check">Thinking Skills<input id="tick" type="checkbox"><span class="checkmark"></span></label>
+					        	<ul id="tick1">
+							        <li><label class="container check">Communication<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Concentration<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Creativity<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Critical Thinking<input type="checkbox"><span class="checkmark"></span></label></li>
+							        <li><label class="container check">Problem Solving<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+							<label class="container check">Social skills<input id="tickk" type="checkbox"><span class="checkmark"></span></label>
+								<ul id="tickk1">
+									<li><label class="container check">Self Confident<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Self Reliance<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Teamwork<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+							<label class="container check">Active Lifestyle<input id="tickk" type="checkbox"><span class="checkmark"></span></label>
+							<label class="container check">School Skills<input id="tickkk" type="checkbox"><span class="checkmark"></span></label>
+								<ul id="tickkk1">
+									<li><label class="container check">Languges<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Mathematics<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Science<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Social studies<input type="checkbox"><span class="checkmark"></span></label></li>
+									<li><label class="container check">Computer<input type="checkbox"><span class="checkmark"></span></label></li>
+							    </ul>
+						</div>
+			        </div><br>
+				</div>
+			</div>
+		</nav>
+<!-- content -->
+		<article>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="input-group search-container">
+						<input type="text" class="form-control" name="search" placeholder=" Search for Blogs">
+      					<button type="submit" class="btn btn-primary searchbt"><i class="fa fa-search"></i></button>	
+						</div>
+					</div>
+					<div class="col-md-4 zippin show">
+						<label style="padding-top: 7px; padding-right: 5px;">Sort by</label>
+						<select class="form-control" style="width: 180px;">
+			  				<option value="0" selected>New to Old</option>
+				            <option value="1">Old to New</option>
+				            <option value="2">A to Z</option>
+				            <option value="3">Z to A</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 zippin show">
+						<p style="color: gray; padding-top: 5px;">Showing <span style="font-weight: 650;">4</span> of <span style="font-weight: 650;">20</span> results.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<a href="block.html" class="clickread">
+							<div class="bigpic">
+								<img src="image/kids.jpg" alt="kids" style="width:100%; height: 400px; opacity: 0.9; border-radius: 5px;">
+								<div class="text-block">
+									<span class="bloghead">When your kids outgrow inset puzzles</span>
+							    	<div class="row">
+										<div class="col-md-10">
+							    			<p id="bigArticle">Playing with puzzles has many benefits for young kids. They help develop cognitive skills (matching, problem-solving), social-emotional skills (patience, persistence), and motor skills.</p>
+								    	</div>
+								    </div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<br>
+				
+	<!--------- blog --------->
+				<div class="row">	
+			    	<div class="col-md-6">
+			    		<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+			    			<a href="block.html" class="clickread2">
+				    		<div class="row">
+				    			<div class="col-md-12">
+							        <div class="card-body d-flex flex-column align-items-start">
+							        	<h3 class="bloghead2">Toy Ideas by Skill</h3>
+							        	<div class="mb-1 text-muted">Jan 7, 2019 by Josh Nillson</div>
+							        	<p class="card-text mb-auto">Many times we are drawn to toys that are hot or in or look fun, or that we accidentally come across while shopping for other things.</p>
+							        </div>
+						    	</div>
+						    	<div class="row pic1">
+						    		<div class="col-md-4" style="padding-bottom: 20px;">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy.jpeg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Dog toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-4">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy3.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Car toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-4">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy2.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Bear toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+								</div>
+						    </div>
+							</a>
+				    	</div>
+			    	</div>
+				    <div class="col-md-6">
+				    	<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+				    		<a href="block.html" class="clickread2">
+				    		<div class="row">
+				    			<div class="col-md-12">
+							        <div class="card-body d-flex flex-column align-items-start">
+							        	<h3 class="bloghead2">When kids outgrow inset puzzles</h3>
+							        	<div class="mb-1 text-muted">Feb 7, 2019 by Josh Nillson</div>
+							        	<p class="card-text mb-auto">Playing with puzzles help develop cognitive skills (matching, problem-solving), social-emotional skills (patience, persistence), and motor skills.</p>
+							        </div>
+						    	</div>
+						    	<div class="row pic2">
+						    		<div class="col-md-6" style="padding-bottom: 20px;">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy4.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Elephant box</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-6">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy5.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Snake puzzle</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+								</div>
+						    </div>
+							</a>
+					    </div>
+				    </div>
+				</div>
+
+				<div class="row">	
+			    	<div class="col-md-6">
+			    		<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+			    			<a href="block.html" class="clickread2">
+				    		<div class="row">
+				    			<div class="col-md-12">
+							        <div class="card-body d-flex flex-column align-items-start">
+							        	<h3 class="bloghead2">Toy Ideas by Skill</h3>
+							        	<div class="mb-1 text-muted">Jan 7, 2019 by Josh Nillson</div>
+							        	<p class="card-text mb-auto">Many times we are drawn to toys that are hot or in or look fun, or that we accidentally come across while shopping for other things.</p>
+							        </div>
+						    	</div>
+						    	<div class="row pic1">
+						    		<div class="col-md-4" style="padding-bottom: 20px;">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy.jpeg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Dog toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-4">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy3.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Car toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-4">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy2.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Bear toy</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+								</div>
+						    </div>
+							</a>
+				    	</div>
+			    	</div>
+				    <div class="col-md-6">
+				    	<div class="card flex-md-row mb-4 shadow-sm h-md-250">
+				    		<a href="block.html" class="clickread2">
+				    		<div class="row">
+				    			<div class="col-md-12">
+							        <div class="card-body d-flex flex-column align-items-start">
+							        	<h3 class="bloghead2">When kids outgrow inset puzzles</h3>
+							        	<div class="mb-1 text-muted">Feb 7, 2019 by Josh Nillson</div>
+							        	<p class="card-text mb-auto">Playing with puzzles help develop cognitive skills (matching, problem-solving), social-emotional skills (patience, persistence), and motor skills.</p>
+							        </div>
+						    	</div>
+						    	<div class="row pic2">
+						    		<div class="col-md-6" style="padding-bottom: 20px;">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy4.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Elephant box</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+							    	<div class="col-md-6">
+								        <div class="card rounded">
+								            <div class="card-image">
+								                <center><img class="img-fluid" src="image/toy5.jpg" width="110" height="110"/></center>
+								            </div>
+								            <div class="text-center">
+								                <div class="ad-title m-auto">
+								                    <span class="toyname">Snake puzzle</span>
+								                </div>
+								            </div>
+								        </div>
+							    	</div>
+								</div>
+						    </div>
+							</a>
+					    </div>
+				    </div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="moreclass">
+						<button type="button" class="btn btn-primary classm"><a class="readmore" href="#">See more Blogs</a></button>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+		</article>
+	</section>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- CSS -->
+	<link rel="stylesheet" href="stemCss.css">
+</body>
+</html>
