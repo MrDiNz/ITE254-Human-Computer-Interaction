@@ -48,7 +48,7 @@
       </div>
       <div>
         <label class="p1">Age</label><br>
-        <div class="selectsearch models">
+        <div class="selectsearch ageFilter">
           <label class="container check">0 to 3<input type="checkbox" rel="age03" onchange="change();"><span
               class="checkmark"></span></label>
           <label class="container check">4 to 6<input type="checkbox" rel="age46" onchange="change();"><span
@@ -64,14 +64,14 @@
       </div>
       <div>
         <label class="p1">Day</label><br>
-        <div class="selectsearch">
-          <label class="container check">Monday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Tuesday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Wednesday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Thursday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Friday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Saturday<input type="checkbox"><span class="checkmark"></span></label>
-          <label class="container check">Sunday<input type="checkbox"><span class="checkmark"></span></label>
+        <div class="selectsearch dayFilter">
+          <label class="container check">Monday<input type="checkbox" rel="Mon" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Tuesday<input type="checkbox" rel="Tue" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Wednesday<input type="checkbox" rel="Wed" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Thursday<input type="checkbox" rel="Thu" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Friday<input type="checkbox" rel="Fri" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Saturday<input type="checkbox" rel="Sat" onchange="change();"><span class="checkmark"></span></label>
+          <label class="container check">Sunday<input type="checkbox" rel="Sun" onchange="change();"><span class="checkmark"></span></label>
         </div>
       </div>
       <div>
@@ -162,15 +162,16 @@
             style="font-weight: 650;">30</span> results.</p>
       </div>
     </div>
+
     <!-- class row1 -->
-    <div class="row">
-      <div class="col-md-3 col-sm-6 result">
-        <div class="product-grid6 age03">
+    <div class="row result">
+      <div class="col-md-3 col-sm-6 age46 Mon">
+        <div class="product-grid6 age46 Mon">
           <a href="classinfo.html" class="fill-div">
-            <div class="product-image6">
+            <div class="product-image6 age46 Mon">
               <img class="pic-1" src="image/classimg.jpg">
             </div>
-            <div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">
+            <div class="product-content age46 Mon" style="background-color: white; border:1px solid #f4f4f5;">
               <h3 class="title">Class Name</h3>
               <center>
                 <table>
@@ -194,13 +195,13 @@
           </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 age03">
-        <div class="product-grid6">
+      <div class="col-md-3 col-sm-6 age46 Tue">
+        <div class="product-grid6 age46 Tue">
           <a href="classinfo.html" class="fill-div">
-            <div class="product-image6">
+            <div class="product-image6 age46 Tue">
               <img class="pic-1" src="image/classimg2.png">
             </div>
-            <div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">
+            <div class="product-content age46 Tue" style="background-color: white; border:1px solid #f4f4f5;">
               <h3 class="title">Class Name</h3>
               <center>
                 <table>
@@ -213,7 +214,7 @@
                   </tr>
                   <tr>
                     <td><i class="fas fa-clock icon"></i></td>
-                    <td><span class="a">Monday 4-5pm</span></td>
+                    <td><span class="a">Tuesday 4-5pm</span></td>
 
                     <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
                     <td><span class="a">Miss Mini</span></td>
@@ -224,13 +225,13 @@
           </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 age03">
-        <div class="product-grid6">
+      <div class="col-md-3 col-sm-6 age46 Wed">
+        <div class="product-grid6 age46 Wed">
           <a href="classinfo.html" class="fill-div">
-            <div class="product-image6">
+            <div class="product-image6 age46 Wed">
               <img class="pic-1" src="image/classimg3.jpg">
             </div>
-            <div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">
+            <div class="product-content age46 Wed" style="background-color: white; border:1px solid #f4f4f5;">
               <h3 class="title">Class Name</h3>
               <center>
                 <table>
@@ -243,7 +244,7 @@
                   </tr>
                   <tr>
                     <td><i class="fas fa-clock icon"></i></td>
-                    <td><span class="a">Monday 4-5pm</span></td>
+                    <td><span class="a">Wednesday 4-5pm</span></td>
 
                     <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
                     <td><span class="a">Miss Mini</span></td>
@@ -254,13 +255,13 @@
           </a>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6 age46">
-        <div class="product-grid6">
+      <div class="col-md-3 col-sm-6 age03 Thu">
+        <div class="product-grid6 age03 Thu">
           <a href="classinfo.html" class="fill-div">
-            <div class="product-image6">
+            <div class="product-image6 age03 Thu">
               <img class="pic-1" src="image/classimg4.jpg">
             </div>
-            <div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">
+            <div class="product-content age03 Thu" style="background-color: white; border:1px solid #f4f4f5;">
               <h3 class="title">Class Name</h3>
               <center>
                 <table>
@@ -273,7 +274,7 @@
                   </tr>
                   <tr>
                     <td><i class="fas fa-clock icon"></i></td>
-                    <td><span class="a">Monday 4-5pm</span></td>
+                    <td><span class="a">Thursday 4-5pm</span></td>
 
                     <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
                     <td><span class="a">Miss Mini</span></td>
@@ -287,130 +288,253 @@
     </div>
     <br><br>
 
-    <!--&lt;!&ndash; class row2 &ndash;&gt;-->
-    <!--<div class="row">-->
-      <!--<div class="col-md-3 col-sm-6 filterDiv 7to11">-->
-        <!--<div class="product-grid6">-->
-          <!--<a href="classinfo.html" class="fill-div">-->
-            <!--<div class="product-image6">-->
-              <!--<img class="pic-1" src="image/classimg2.png">-->
-            <!--</div>-->
-            <!--<div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">-->
-              <!--<h3 class="title">Class Name</h3>-->
-              <!--<center>-->
-                <!--<table>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-child icon"></i></td>-->
-                    <!--<td><span class="a">Age: 7 to 11</span></td>-->
+    <!-- class row2 -->
+    <div class="row result">
+      <div class="col-md-3 col-sm-6 age711 Fri">
+        <div class="product-grid6 age711 Fri">
+          <a href="classinfo.html" class="fill-div age711 Fri">
+            <div class="product-image6 age711 Fri">
+              <img class="pic-1" src="image/classimg2.png">
+            </div>
+            <div class="product-content age711 Fri" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 7 to 11</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>-->
-                    <!--<td><span class="a">Rama 9</span></td>-->
-                  <!--</tr>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-clock icon"></i></td>-->
-                    <!--<td><span class="a">Monday 4-5pm</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Friday 4-5pm</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>-->
-                    <!--<td><span class="a">Miss Mini</span></td>-->
-                  <!--</tr>-->
-                <!--</table>-->
-              <!--</center>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="col-md-3 col-sm-6 filterDiv 7to11">-->
-        <!--<div class="product-grid6">-->
-          <!--<a href="classinfo.html" class="fill-div">-->
-            <!--<div class="product-image6">-->
-              <!--<img class="pic-1" src="image/classimg3.jpg">-->
-            <!--</div>-->
-            <!--<div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">-->
-              <!--<h3 class="title">Class Name</h3>-->
-              <!--<center>-->
-                <!--<table>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-child icon"></i></td>-->
-                    <!--<td><span class="a">Age: 7 to 11</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 age711 Sat">
+        <div class="product-grid6 age711 Sat">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 age711 Sat">
+              <img class="pic-1" src="image/classimg3.jpg">
+            </div>
+            <div class="product-content age711 Sat" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 7 to 11</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>-->
-                    <!--<td><span class="a">Rama 9</span></td>-->
-                  <!--</tr>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-clock icon"></i></td>-->
-                    <!--<td><span class="a">Monday 4-5pm</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Saturday 4-5pm</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>-->
-                    <!--<td><span class="a">Miss Mini</span></td>-->
-                  <!--</tr>-->
-                <!--</table>-->
-              <!--</center>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="col-md-3 col-sm-6 filterDiv 0to3">-->
-        <!--<div class="product-grid6">-->
-          <!--<a href="classinfo.html" class="fill-div">-->
-            <!--<div class="product-image6">-->
-              <!--<img class="pic-1" src="image/classimg4.jpg">-->
-            <!--</div>-->
-            <!--<div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">-->
-              <!--<h3 class="title">Class Name</h3>-->
-              <!--<center>-->
-                <!--<table>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-child icon"></i></td>-->
-                    <!--<td><span class="a">Age: 0 to 3</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 age03 Sat">
+        <div class="product-grid6 age03 Sat">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 age03 Sat">
+              <img class="pic-1" src="image/classimg4.jpg">
+            </div>
+            <div class="product-content age03 Sat" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 0 to 3</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>-->
-                    <!--<td><span class="a">Rama 9</span></td>-->
-                  <!--</tr>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-clock icon"></i></td>-->
-                    <!--<td><span class="a">Monday 4-5pm</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Saturday 4-5pm</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>-->
-                    <!--<td><span class="a">Miss Mini</span></td>-->
-                  <!--</tr>-->
-                <!--</table>-->
-              <!--</center>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</div>-->
-      <!--</div>-->
-      <!--<div class="col-md-3 col-sm-6 filterDiv 12to18">-->
-        <!--<div class="product-grid6">-->
-          <!--<a href="classinfo.html" class="fill-div">-->
-            <!--<div class="product-image6">-->
-              <!--<img class="pic-1" src="image/classimg.jpg">-->
-            <!--</div>-->
-            <!--<div class="product-content" style="background-color: white; border:1px solid #f4f4f5;">-->
-              <!--<h3 class="title">Class Name</h3>-->
-              <!--<center>-->
-                <!--<table>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-child icon"></i></td>-->
-                    <!--<td><span class="a">Age: 12 to 18</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 filterDiv 12to18 Sun">
+        <div class="product-grid6 Sun">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 12to18 Sun">
+              <img class="pic-1" src="image/classimg.jpg">
+            </div>
+            <div class="product-content 12to18 Sun" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 12 to 18</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>-->
-                    <!--<td><span class="a">Rama 9</span></td>-->
-                  <!--</tr>-->
-                  <!--<tr>-->
-                    <!--<td><i class="fas fa-clock icon"></i></td>-->
-                    <!--<td><span class="a">Monday 4-5pm</span></td>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Sunday 4-5pm</span></td>
 
-                    <!--<td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>-->
-                    <!--<td><span class="a">Miss Mini</span></td>-->
-                  <!--</tr>-->
-                <!--</table>-->
-              <!--</center>-->
-            <!--</div>-->
-          <!--</a>-->
-        <!--</div>-->
-      <!--</div>-->
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+    <br><br>
+    <!-- class row3 -->
+    <div class="row result">
+      <div class="col-md-3 col-sm-6 age1218 Sun">
+        <div class="product-grid6 age1218 Sun">
+          <a href="classinfo.html" class="fill-div age711 Sun">
+            <div class="product-image6 age1218 Sun">
+              <img class="pic-1" src="image/classimg2.png">
+            </div>
+            <div class="product-content age1218 Sun" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 12 to 18</span></td>
 
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Sunday 4-5pm</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 age1218 Sat">
+        <div class="product-grid6 age1218 Sat">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 age1218 Sat">
+              <img class="pic-1" src="image/classimg3.jpg">
+            </div>
+            <div class="product-content age1218 Sat" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 12 to 18</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Saturday 4-5pm</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 age03 Sat">
+        <div class="product-grid6 age03 Sat">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 age03 Sat">
+              <img class="pic-1" src="image/classimg4.jpg">
+            </div>
+            <div class="product-content age03 Sat" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 0 to 3</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Saturday 4-5pm</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 filterDiv 12to18 Sun">
+        <div class="product-grid6 12to18 Sun">
+          <a href="classinfo.html" class="fill-div">
+            <div class="product-image6 12to18 Sun">
+              <img class="pic-1" src="image/classimg.jpg">
+            </div>
+            <div class="product-content 12to18 Sun" style="background-color: white; border:1px solid #f4f4f5;">
+              <h3 class="title">Class Name</h3>
+              <center>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-child icon"></i></td>
+                    <td><span class="a">Age: 12 to 18</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-map-marker-alt icon1"></i></td>
+                    <td><span class="a">Rama 9</span></td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-clock icon"></i></td>
+                    <td><span class="a">Monday 4-5pm</span></td>
+
+                    <td style="padding-left: 15px;"><i class="fas fa-chalkboard-teacher icon1"></i></td>
+                    <td><span class="a">Miss Mini</span></td>
+                  </tr>
+                </table>
+              </center>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
     <br><br>
 
     <div class="row">
@@ -459,15 +583,16 @@
 <!--filter script-->
 <script>
     function change() {
-        var modelCbs = document.querySelectorAll(".models input[type='checkbox']");
-        var processorCbs = document.querySelectorAll(".processors input[type='checkbox']");
+        var ageCbs = document.querySelectorAll(".ageFilter input[type='checkbox']");
+        var dayCbs = document.querySelectorAll(".dayFilter input[type='checkbox']");
         var filters = {
-            models: getClassOfCheckedCheckboxes(modelCbs),
-            // processors: getClassOfCheckedCheckboxes(processorCbs)
+            age: getClassOfCheckedCheckboxes(ageCbs),
+            day: getClassOfCheckedCheckboxes(dayCbs)
         };
 
+
         filterResults(filters);
-        console.log("filter = "+ filters.models)
+        console.log("filter = "+ filters.age)
     }
 
     function getClassOfCheckedCheckboxes(checkboxes) {
@@ -497,12 +622,12 @@
         for (var i = 0; i < rElems.length; i++) {
             var el = rElems[i];
                 console.log(i)
-            if (filters.models.length > 0) {
+            if (filters.age.length > 0) {
                 var isHidden = true;
 
-                for (var j = 0; j < filters.models.length; j++) {
-                    var filter = filters.models[j];
-                    console.log(filters.models[j]);
+                for (var j = 0; j < filters.age.length; j++) {
+                    var filter = filters.age[j];
+                    console.log(filters.age[j]);
 
                     if (el.classList.contains(filter)) {
                         isHidden = false;
@@ -515,22 +640,22 @@
                 }
             }
 
-            // if (filters.processors.length > 0) {
-            //     var isHidden = true;
-            //
-            //     for (var j = 0; j < filters.processors.length; j++) {
-            //         var filter = filters.processors[j];
-            //
-            //         if (el.classList.contains(filter)) {
-            //             isHidden = false;
-            //             break;
-            //         }
-            //     }
-            //
-            //     if (isHidden) {
-            //         hiddenElems.push(el);
-            //     }
-            // }
+            if (filters.day.length > 0) {
+                var isHidden = true;
+
+                for (var j = 0; j < filters.day.length; j++) {
+                    var filter = filters.day[j];
+
+                    if (el.classList.contains(filter)) {
+                        isHidden = false;
+                        break;
+                    }
+                }
+
+                if (isHidden) {
+                    hiddenElems.push(el);
+                }
+            }
         }
 
         for (var i = 0; i < rElems.length; i++) {
