@@ -7,6 +7,21 @@ body {
 box-sizing: border-box;
 }
 /* Create two columns/boxes that floats next to each other */
+
+.toppic {
+  position: relative; 
+  max-width: 100%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.toppic .content {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  width: 100%; /* Full width */
+  padding: 15px; /* Some padding */
+}
+
 nav {
   float: left;
   width: 20%;
@@ -100,11 +115,11 @@ section:after {
 }
 
 /*header*/
-p#findclass {
-	padding-left: 590px;
-	color: #5bc0af;
-	font-size: 50px;
-	font-weight: 900;
+span#findclass {
+	padding-left: 560px;
+	color: #fff;
+	font-size: 70px;
+	font-weight: bold;
 }
 
 .search-container {
@@ -121,9 +136,9 @@ p#findclass {
 }
 
 span#searchtype {
-  padding-left: 427px;
-  font-size: 11px;
-  color: gray;
+  padding-left: 413px;
+  font-size: 13px;
+  color: #fff;
 }
 
 .show {
@@ -226,7 +241,7 @@ a.readmore {
 /*div*/
 .product-grid6,.product-grid6 .product-image6{overflow:hidden}
 .product-grid6{text-align:center;position:relative;transition:all .5s ease 0s}
-.product-grid6:hover{box-shadow:0 5px 20px rgba(0,0,0,.4);}
+.product-grid6:hover{box-shadow:0 5px 10px rgba(0,0,0,.2);}
 .product-grid6 .product-image6 a{display:block}
 .product-grid6 .product-image6 img{width:100%;height:auto;transition:all .5s ease 0s;border-top-left-radius: 5px;border-top-right-radius: 5px;}
 .product-grid6:hover .product-image6 img{transform:scale(1.1)}
@@ -236,5 +251,4 @@ a.readmore {
 @media only screen and (max-width:1200px){.product-grid6 .rating{margin:0}
 }
 
-
-/*slider*/
+/*filter testing*/

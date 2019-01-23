@@ -110,7 +110,7 @@ a#seecoach:hover , #seerw:hover {
 button.savebt {
 	background-color:  white !important;
 	border: 3px solid #e79746;
-	padding: 11px 88px;
+	padding: 11px 94px;
 	border-radius: 7.5px;
 }
 
@@ -140,7 +140,7 @@ button.Add-to-card {
 	border-radius: 7.5px;
 	margin-top: 10px;
 	/*padding: 15px 50px;*/
-	padding: 14px 106px;
+	padding: 14px 111px;
 
 }
 .Add-to-card:hover {
