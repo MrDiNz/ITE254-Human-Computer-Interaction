@@ -3,37 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <!--Plugin CSS file with desired skin-->
+  <!--sldier import-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css"/>
-  <!--jQuery-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!--Plugin JavaScript file-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
-
 </head>
 <body>
 <div style="width: 300px;">
-  <input type="text" id="demo_10" name="rangePrimary" value=""/>
+  <input type="text" id="demo_6" name="rangePrimary" value=""/>
   <p id="priceRangeSelected"></P>
 </div>
-
 <script>
-    $("#demo_10").ionRangeSlider({
+    $("#demo_6").ionRangeSlider({
+        grid: true,
         skin: "round",
         type: "double",
-        // grid: true,
-        min: 0,
-        max: 21,
-        from: 5,
-        to: 10,
-        max_postfix: "+",
-        prefix: "Age: ",
-        postfix: " years",
+        from: new Date().getMonth(),
         onFinish: function (data) {
             // fired on pointer release
             console.log("finish")
             console.log(data)
         },
+        values: [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+            "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+        ]
     });
 </script>
 </body>
