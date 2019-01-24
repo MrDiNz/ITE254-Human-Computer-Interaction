@@ -637,10 +637,12 @@
         postfix: " years",
         onFinish: function (data) {
             // fired on pointer release
-            console.log("onFinish = " + data);
+            console.log("onFinish = ")
+            console.log(data.from);
+            console.log(data.to)
             arr = [];
             //condition here age 03 46 711 1218
-            change(arr)
+            change(arr);
 
         },
     });
