@@ -23,10 +23,6 @@
 </head>
 <body>
 <header>
-  <div style="width: 300px;">
-    <input type="text" id="demo_10" name="rangePrimary" value=""/>
-    <p id="priceRangeSelected"></P>
-  </div>
   <!--Header-->
   <div class="toppic">
     <img src="image/kids3cut.jpg" style="width:100%; opacity: 0.8;">
@@ -60,17 +56,22 @@
       </div>
       <div>
         <label class="p1">Age</label><br>
-        <div class="selectsearch ageFilter">
-          <label class="container check">0 to 3<input type="checkbox" rel="age03" onchange="change();"><span
-              class="checkmark"></span></label>
-          <label class="container check">4 to 6<input type="checkbox" rel="age46" onchange="change();"><span
-              class="checkmark"></span></label>
-          <label class="container check">7 to 11<input type="checkbox" rel="age711" onchange="change();"><span
-              class="checkmark"></span></label>
-          <label class="container check">12 to 18<input type="checkbox" rel="age1218"
-                                                        onchange="change();"><span
-              class="checkmark"></span></label>
+        <!--slider-->
+        <div style="width: 100%;">
+          <input type="text" id="demo_10" name="rangePrimary" value=""/>
+          <p id="priceRangeSelected"></P>
         </div>
+        <!--<div class="selectsearch ageFilter">-->
+          <!--<label class="container check">0 to 3<input type="checkbox" rel="age03" onchange="change();"><span-->
+              <!--class="checkmark"></span></label>-->
+          <!--<label class="container check">4 to 6<input type="checkbox" rel="age46" onchange="change();"><span-->
+              <!--class="checkmark"></span></label>-->
+          <!--<label class="container check">7 to 11<input type="checkbox" rel="age711" onchange="change();"><span-->
+              <!--class="checkmark"></span></label>-->
+          <!--<label class="container check">12 to 18<input type="checkbox" rel="age1218"-->
+                                                        <!--onchange="change();"><span-->
+              <!--class="checkmark"></span></label>-->
+        <!--</div>-->
       </div>
       <div>
         <p class="p1">Season</p>
@@ -629,12 +630,12 @@
         type: "double",
         // grid: true,
         min: 0,
-        max: 21,
+        max: 18,
         from: 5,
         to: 10,
         max_postfix: "+",
-        prefix: "Age: ",
-        postfix: " years",
+        // prefix: "Age: ",
+        // postfix: " years",
         onFinish: function (data) {
             // fired on pointer release
             console.log("onFinish = ")
@@ -642,6 +643,21 @@
             console.log(data.to)
             arr = [];
             //condition here age 03 46 711 1218
+            for (let i = data.from; i < data.to; i++) {
+                if (i >= 0 && i <= 3) {
+                    arr.push("age03")
+                }
+                if (i >= 4 && i <= 6) {
+                    arr.push("age46")
+                }
+                if (i >= 7 && i <= 11) {
+                    arr.push("age711")
+                }
+                if (i >= 12 && i <= 18) {
+                    arr.push("age1218")
+                }
+            }
+            console.log(arr)
             change(arr);
 
         },
